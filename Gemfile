@@ -5,7 +5,7 @@ group :development do
   gem "beaker-rspec", ">= 5.1.0"
   gem "beaker-puppet_install_helper"
   gem "pry"
-  gem "puppet-blacksmith"
+  gem "puppet-blacksmith", ">= 3.3.1"
   gem "serverspec"
   gem "vagrant-wrapper"
 end
@@ -14,7 +14,7 @@ group :test do
   gem "json"
   # Pin for 1.8.7 compatibility for now
   gem "rake", '< 11.0.0'
-  gem "puppet", ENV['PUPPET_VERSION'] || '~> 3.7.0'
+  gem "puppet", ">= 6.25.1", ENV['PUPPET_VERSION'] || '~> 3.7.0'
   gem "puppet-lint"
 
   # Pin for 1.8.7 compatibility for now
